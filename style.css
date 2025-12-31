@@ -723,3 +723,202 @@ background: #000;
 padding: 20px;
 background: var(--panel);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* VSL Notice */
+.vsl-notice {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(21, 87, 168, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 5;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.vsl-notice .small {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Testimonial Links */
+.video-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.link-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--muted);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    background: var(--accent-a);
+    color: white;
+}
+
+/* Viral Flow Section */
+.viral-flow-box {
+    background: rgba(255,255,255,0.03);
+    border-radius: var(--radius);
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.module {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--accent-a);
+}
+
+.module h4 {
+    margin-bottom: 10px;
+    color: var(--accent-a);
+}
+
+.module ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.module li {
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.05);
+}
+
+.pricing {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.price-card {
+    background: linear-gradient(135deg, #1557a8, #0d3a7a);
+    padding: 30px;
+    border-radius: var(--radius);
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(21, 87, 168, 0.3);
+}
+
+.price-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Outcome Box */
+.outcome-box {
+    background: linear-gradient(135deg, #17253B, #0a0a0b);
+    padding: 30px;
+    border-radius: var(--radius);
+    margin: 40px 0;
+    border-left: 6px solid var(--accent-a);
+}
+
+.outcome-box ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.outcome-box li {
+    padding: 8px 0;
+    position: relative;
+}
+
+.outcome-box li:before {
+    content: "✔";
+    color: #4CAF50;
+    position: absolute;
+    left: -20px;
+}
+
+/* Calendly Placeholder */
+.calendly-placeholder {
+    background: var(--panel);
+    padding: 30px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.calendar {
+    margin: 20px 0;
+}
+
+.month {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.weekdays span {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.days span {
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+}
+
+.days .available {
+    background: #1557a8;
+    color: white;
+    cursor: pointer;
+}
+
+.timezone {
+    margin-top: 25px;
+}
+
+.timezone select {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--accent-a);
+    color: var(--accent-a);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-a);
+    color: white;
+}
