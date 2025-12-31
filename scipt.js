@@ -117,25 +117,6 @@ const videoTitle = document.getElementById('videoTitle');
 const videoDescription = document.getElementById('videoDescription');
 const closeModal = document.querySelector('.close-modal');
 
-// Video data for titles and descriptions
-const videoData = {
-    'v1.mp4': {
-        title: '@brian_mark - 307K Followers',
-        description: 'I never had an organic strategy that was consistently going viral... until I worked with Devin.'
-    },
-    'v2.mp4': {
-        title: '@ryan_nork - 176K Followers',
-        description: 'Within 4 months I had 5 videos get over a million views — the scripting and editing changed everything.'
-    },
-    'v3.mp4': {
-        title: '@khalidknows - 85K Followers',
-        description: 'Took my brand from 6k followers to 236k and reached 10M accounts in 90 days.'
-    },
-    'v4.mp4': {
-        title: '@dluces_ - 199K Followers',
-        description: 'The very first video I posted got 483k views.'
-    }
-};
 
 // Open modal when video card is clicked
 document.querySelectorAll('.card').forEach((card, index) => {
@@ -194,25 +175,7 @@ const pictureTitle = document.getElementById('pictureTitle');
 const pictureDescription = document.getElementById('pictureDescription');
 const closePictureModal = pictureModal.querySelector('.close-modal');
 
-// Picture data for titles and descriptions
-const pictureData = {
-    'p1.jpg': {
-        title: '@brian_mark - 307K Followers',
-        description: 'From struggling creator to viral sensation with consistent organic growth strategies.'
-    },
-    'p2.jpg': {
-        title: '@ryan_nork - 176K Followers',
-        description: 'Mastered the art of viral content creation with proven scripting and editing frameworks.'
-    },
-    'p3.jpg': {
-        title: '@khalidknows - 85K Followers',
-        description: 'Explosive growth from 6k to 236k followers in just 90 days through strategic content.'
-    },
-    'p4.jpg': {
-        title: '@dluces_ - 199K Followers',
-        description: 'First video reached 483k views - proving the power of our content framework.'
-    }
-};
+
 
 // Open picture modal when picture card is clicked
 document.querySelectorAll('.picture-card').forEach((card, index) => {
@@ -250,4 +213,56 @@ document.addEventListener('keydown', (e) => {
         pictureModal.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
+});
+
+
+
+
+
+
+// Picture data update for new handles
+const pictureData = {
+    'p1.jpg': {
+        title: '@often_mark - 30K Followers',
+        description: 'From struggling creator to viral sensation with consistent organic growth strategies.'
+    },
+    'p2.jpg': {
+        title: '@yew_nork - 70K Followers',
+        description: 'Mastered the art of viral content creation with proven scripting and editing frameworks.'
+    },
+    'p3.jpg': {
+        title: '@halidbrows - 68K Followers',
+        description: 'Explosive growth from 6k to 236k followers in just 90 days through strategic content.'
+    },
+    'p4.jpg': {
+        title: '@alves... - 10K Followers',
+        description: 'First video reached 483k views - proving the power of our content framework.'
+    }
+};
+
+// Video data update for new handles
+const videoData = {
+    'v1.mp4': {
+        title: '@often_mark - 30K Followers',
+        description: 'I never had an organic strategy that was consistently going viral... until I worked with Devin.'
+    },
+    'v2.mp4': {
+        title: '@yew_nork - 70K Followers',
+        description: 'Within 4 months I had 5 videos get over a million views — the scripting and editing changed everything.'
+    },
+    'v3.mp4': {
+        title: '@halidbrows - 68K Followers',
+        description: 'Took my brand from 6k followers to 236k and reached 10M accounts in 90 days.'
+    },
+    'v4.mp4': {
+        title: '@alves... - 10K Followers',
+        description: 'The very first video I posted got 483k views.'
+    }
+};
+
+// Add click event for "Just Press The Damn Button"
+document.querySelectorAll('.btn-secondary, .price-card .btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+    });
 });
